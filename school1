@@ -1,0 +1,25 @@
+let Name; //Input the user's name
+let cNumber; //User inputs their customer number
+let oNumber; //User inputs their order number
+let rNumber; // If user is returning they can input their reference number which was given to them at the end of their last session
+
+Name = prompt("Hello, Please enter your name");
+cNumber = prompt("Please enter your 5 digit customer number");
+oNumber = prompt("Please enter your order 8 digit number");
+rNumber = prompt("If returning,please input your reference number, if not please put 0");
+rNumberActive = Name.substr(0,1) + oNumber.substr(4,4);
+
+console.log("");
+console.log("Name:  " + Name);
+console.log("Customer Number:  " + cNumber);
+console.log("Order Number:  " + oNumber);
+console.log("Reference Number:  " + rNumber);
+console.log("")
+console.log("Please wait while we connect you to an virtual agent, thank you for using this online store!");
+console.log("")
+console.log("Hello Name!, I will be assisting you today, please allow me to check the status of your order");
+console.log("")
+console.log("Okay, looks like your order has been shipped");
+console.log("")
+console.log("Order Status: Shipped)
+console.log("If you have any other questions, please reach back out to this virtual chat using your reference number," + rNumberActive);
